@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+.container {
+    width:100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cloud-1 {
+    position: absolute;
+    top: 1%;
+    left: 9%;
+    height: 200px;
+    width: 300px;
+}
+
+.cloud-2 {
+    height: 125px;
+    width: 200;
+    position: absolute;
+    left: 40%;
+    top: 9%;
+}
+
+.cloud-3 {
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 57%;
+    top: 1%;
+}
+
+.cloud-4 {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    left: 84%;
+    top: 7%;
+}
+
+.plane img {
+
+    height: 150px;
+    width: 350px;
+    position:absolute;
+    bottom: 0;
+    left: -25%;
+    top: 30%;
+    animation: planeAnim 6s infinite linear ;
+   
+}
+
+
+
+
+@keyframes planeAnim {
+
+    50% { left: 40%; }
+
+    55% {left: 39%; }
+
+    100% { left: 100%; }
+
+}
+
+.airdrop img {
+    height: 100px;
+    position: relative;
+    left: 45%;
+    top: 351px;
+    transform: translate(-50%, 225%);
+    visibility: hidden;
+    animation: airdropAnim 6s linear infinite;
+    animation-delay: 3s;
+}
+
+
+@keyframes airdropAnim {
+
+
+
+    0% {
+        top: 50px;
+        visibility: visible;
+    }
+    
+    
+
+}
